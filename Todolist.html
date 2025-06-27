@@ -261,7 +261,6 @@
                 }
             }).join('');
 
-            // Focus pada input edit
             if (editingId !== null) {
                 const editInput = document.getElementById('edit-input-' + editingId);
                 if (editInput) {
@@ -280,7 +279,6 @@
                 `Total: ${total} | Selesai: ${completed} | Tersisa: ${remaining}`;
         }
 
-        // Event listeners
         document.getElementById('todoInput').addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
                 addTask();
@@ -297,7 +295,6 @@
             }
         });
 
-        // Initialize
         updateStats();
     </script>
 </body>
